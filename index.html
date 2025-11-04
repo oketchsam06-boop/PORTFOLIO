@@ -1,96 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>portfolio</title>
-    <style>
-      body{
-        background-color: rgb(1, 1, 7);
-      }
-        .topA{
-            display: flex;
-            background-color:rgb(8, 8, 36);
-            
-            height: 30px;
-            justify-content: space-between;
-            padding: 20px;
-            font-size: 20px;
-            text-decoration: none;
-            text-align: center;
 
-        }
-        .topA a
-        {
-            
-            background-color: blue;
-            text-decoration: none;
-              border-radius: 20px;
-              padding: 10px;
-              color: white;
-              font-weight:20px;
-
-        }
-          .topA a:hover{
-            background-color: rgba(96, 81, 81, 0.603);
-            padding: 10px;
-            color: white;
-
-          }
-          h3{
-            background-color: rgb(49, 24, 162);
-            width: 25px;
-            height: 25px;
-            color: white;
-            border-radius: 60px;
-            padding: 20px;
-            text-align: center;
-            margin:10px ;
-            
-          }
-          .imageA{
-               background: url(OIP.webp) no-repeat center center/cover;
-               color: white;
-               text-align: center;
-               padding:20px;
-               line-height:1.0px ;
-          }
-          img{
-               height: 70px;
-               padding: 20px;
-               border-radius: 60px;
-               line-height: 40px;
-               box-shadow: 30px;
-               
-               
-          }
-          .click{
-            
-            text-decoration: none;
-            justify-content: space-between;
-            margin: 20px;
-      
-          }
-          .click1{
-            background-color: blue;
-            padding: 10px;
-            border-radius: 20px;
-            text-decoration: none;
-            color: white;
             <!doctype html>
             <html lang="en">
               <head>
-                <meta charset="utf-8" />
-                <meta name="viewport" content="width=device-width,initial-scale=1" />
-                <title>Samuel Oketch — Frontend Developer</title>
-                <meta name="description" content="Samuel Oketch — Frontend developer. I build accessible, responsive websites and small web apps. View projects and get in touch." />
-                <meta property="og:title" content="Samuel Oketch — Frontend Developer" />
-                <meta property="og:description" content="I build accessible, responsive websites and small web apps. View projects and get in touch." />
-                <meta property="og:type" content="website" />
-                <meta property="og:image" content="/assets/og-image.png" />
-                <link rel="icon" href="/assets/favicon.ico" />
-                <link rel="manifest" href="manifest.json">
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width,initial-scale=1">
+                <title>Samuel Oketch — Portfolio</title>
+                <meta name="description" content="Samuel Oketch — Frontend developer. I build accessible, responsive websites and small web apps.">
                 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
                 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
                 <link rel="stylesheet" href="styles.css">
@@ -100,14 +15,10 @@
                 <header class="site-header">
                   <div class="container header-inner">
                     <a class="brand" href="#hero">Samuel<span class="brand-dot">.</span></a>
-                    <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
-                      <i class='bx bx-menu'></i>
-                    </button>
-                    <nav id="primary-navigation" class="primary-nav" data-visible="false">
+                    <nav id="primary-navigation" class="primary-nav">
                       <a href="#projects">Projects</a>
                       <a href="#about">About</a>
                       <a href="#contact">Contact</a>
-                      <button id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Toggle color theme">🌙</button>
                     </nav>
                   </div>
                 </header>
@@ -118,32 +29,34 @@
                       <div class="hero-content">
                         <p class="kicker">Hi, I’m</p>
                         <h1>Samuel Oketch Ogola</h1>
-                        <p class="role">Frontend developer — building accessible and responsive websites</p>
+                        <p class="role">Frontend developer — I build accessible, responsive websites.</p>
                         <p class="hero-cta">
                           <a class="btn primary" href="#projects">View my work</a>
-                          <a class="btn" href="#contact">Contact me</a>
+                          <a class="btn" href="#contact">Contact</a>
                         </p>
-                        <ul class="hero-links" aria-hidden="false">
-                          <li><a href="https://github.com/oketchsam06-boop" target="_blank" rel="noopener">GitHub <i class='bx bxl-github'></i></a></li>
-                          <li><a href="#" target="_blank" rel="noopener">LinkedIn <i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
+                        <p class="muted">Find me on <a href="https://github.com/oketchsam06-boop" target="_blank" rel="noopener">GitHub</a></p>
                       </div>
+
+                      <!-- Simple inline SVG as profile fallback so the page won't look empty if assets are missing -->
                       <figure class="hero-image" aria-hidden="false">
-                        <img src="/assets/profile-placeholder.png" alt="Portrait of Samuel Oketch" loading="lazy">
+                        <svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile placeholder">
+                          <rect width="240" height="240" rx="20" fill="#0f1720" />
+                          <circle cx="120" cy="86" r="36" fill="#2b3642" />
+                          <rect x="48" y="140" width="144" height="44" rx="10" fill="#1b232b" />
+                        </svg>
                       </figure>
                     </div>
                   </section>
 
                   <section id="projects" class="projects container">
                     <h2>Selected projects</h2>
-                    <p class="muted">A few projects showing the stack and links to source or demo.</p>
+                    <p class="muted">Project cards below are placeholders — replace with screenshots and links.</p>
                     <div class="projects-grid" role="list">
                       <article class="card" role="listitem">
-                        <img src="/assets/project-1.png" alt="Screenshot of project 1" loading="lazy">
+                        <div style="height:120px;background:linear-gradient(90deg,#111,#222);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#999">Project screenshot</div>
                         <div class="card-body">
                           <h3>Project One</h3>
-                          <p class="muted">Frontend app built with HTML, CSS and JavaScript. Focus on responsive UI.</p>
-                          <p class="tags">HTML • CSS • JS</p>
+                          <p class="muted">Short description about the project and technologies used.</p>
                           <p class="card-actions">
                             <a class="btn small" href="#" data-project="1">Details</a>
                             <a class="btn small ghost" href="https://github.com/oketchsam06-boop" target="_blank" rel="noopener">Source</a>
@@ -152,11 +65,10 @@
                       </article>
 
                       <article class="card" role="listitem">
-                        <img src="/assets/project-2.png" alt="Screenshot of project 2" loading="lazy">
+                        <div style="height:120px;background:linear-gradient(90deg,#111,#222);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#999">Project screenshot</div>
                         <div class="card-body">
                           <h3>Project Two</h3>
-                          <p class="muted">Interactive UI with state management and small animations.</p>
-                          <p class="tags">React • CSS</p>
+                          <p class="muted">Short description about the project and technologies used.</p>
                           <p class="card-actions">
                             <a class="btn small" href="#" data-project="2">Details</a>
                             <a class="btn small ghost" href="#" target="_blank" rel="noopener">Demo</a>
@@ -165,11 +77,10 @@
                       </article>
 
                       <article class="card" role="listitem">
-                        <img src="/assets/project-3.png" alt="Screenshot of project 3" loading="lazy">
+                        <div style="height:120px;background:linear-gradient(90deg,#111,#222);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#999">Project screenshot</div>
                         <div class="card-body">
                           <h3>Project Three</h3>
-                          <p class="muted">Full-stack mini-app — API + frontend integration.</p>
-                          <p class="tags">Node • Express • JS</p>
+                          <p class="muted">Short description about the project and technologies used.</p>
                           <p class="card-actions">
                             <a class="btn small" href="#" data-project="3">Details</a>
                             <a class="btn small ghost" href="#" target="_blank" rel="noopener">Source</a>
@@ -179,47 +90,29 @@
                     </div>
                   </section>
 
-                  <!-- Modal for project details -->
                   <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
                     <div class="modal-content">
                       <button class="modal-close" aria-label="Close dialog">✕</button>
                       <h3 id="modal-title">Project details</h3>
-                      <div id="modal-body"></div>
+                      <div id="modal-body"><p class="muted">Replace with real project information.</p></div>
                     </div>
                   </div>
 
                   <section id="about" class="about container">
-                    <h2>About me</h2>
-                    <p>I’m a Computer Science student and frontend developer. I enjoy turning ideas into accessible, responsive web experiences using HTML, CSS and JavaScript.</p>
-                    <div class="feature-grid">
-                      <div class="feature">
-                        <h4>Frontend</h4>
-                        <p>Building interfaces with good UX and accessibility in mind.</p>
-                      </div>
-                      <div class="feature">
-                        <h4>Full-stack</h4>
-                        <p>Learning backend technologies like Node.js and databases to ship end-to-end solutions.</p>
-                      </div>
-                      <div class="feature">
-                        <h4>Security</h4>
-                        <p>Applying basic best-practices to keep applications secure and robust.</p>
-                      </div>
-                    </div>
+                    <h2>About</h2>
+                    <p>I’m a Computer Science student and frontend developer. I focus on building accessible, responsive web interfaces using HTML, CSS and JavaScript.</p>
                   </section>
 
                   <section id="contact" class="contact container">
                     <h2>Contact</h2>
-                    <p>Want to work together? Send a message below or email <a href="mailto:hello@example.com">hello@example.com</a>.</p>
+                    <p>Send a message or email <a href="mailto:hello@example.com">hello@example.com</a></p>
                     <form id="contact-form" class="contact-form" aria-label="Contact form">
                       <label for="contact-name">Name</label>
                       <input id="contact-name" name="name" type="text" required>
-
                       <label for="contact-email">Email</label>
                       <input id="contact-email" name="email" type="email" required>
-
                       <label for="contact-message">Message</label>
                       <textarea id="contact-message" name="message" rows="5" required></textarea>
-
                       <button type="submit" class="btn primary">Send message</button>
                       <div id="contact-status" role="status" aria-live="polite" class="visually-hidden"></div>
                     </form>
@@ -228,13 +121,11 @@
 
                 <footer class="site-footer">
                   <div class="container footer-inner">
-                    <p>&copy; 2025 Samuel Oketch. All rights reserved.</p>
+                    <p>&copy; 2025 Samuel Oketch</p>
                     <div class="social">
                       <a href="https://github.com/oketchsam06-boop" target="_blank" rel="noopener">GitHub</a>
-                      <a href="#">LinkedIn</a>
                     </div>
                   </div>
                 </footer>
-
               </body>
             </html>
